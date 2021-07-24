@@ -1,10 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Airbnb Cereal App";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Airbnb Cereal App"), url("https://fonts.cdnfonts.com/s/22260/AirbnbCerealBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Airbnb Cereal App";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Airbnb Cereal App"), url("https://fonts.cdnfonts.com/s/22260/AirbnbCerealLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Airbnb Cereal App";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Airbnb Cereal App"), url("https://fonts.cdnfonts.com/s/22260/AirbnbCerealMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Airbnb Cereal App";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Airbnb Cereal App"), url("https://fonts.cdnfonts.com/s/22260/AirbnbCerealBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Airbnb Cereal App";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Airbnb Cereal App"), url("https://fonts.cdnfonts.com/s/22260/AirbnbCerealExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Airbnb Cereal App";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Airbnb Cereal App"), url("https://fonts.cdnfonts.com/s/22260/AirbnbCerealBlack.woff") format("woff");
+}
+
+html,
 body {
+  font-family: "Airbnb Cereal App", sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  @apply bg-gray-100;
+}
+
+#root {
+  width: 100%;
 }
 
 code {
